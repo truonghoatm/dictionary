@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary Demo</title>
+</head>
+<body>
+<script>
+    var Str = prompt("Nhap tu can tra: ");
+    var viet = new Array("Xin chao","Tam biet","Xin loi");
+    var eng = new Array("Hello","Goodbye","Sorry");
+    var x= 0;
+    function checkWord(str) {
+        //var check = 0;
+        for (var i = 0; i < viet.length ; i++) {
+            if (str === viet[i]) {
+                x = viet.indexOf(viet[i]);
+                return true;
+                break;
+            }
+        }
+        return false;
+    }
+    if(checkWord(Str)) {
+        document.write(eng[x]);
+    }else {
+        alert("Khong tim thay");
+    }
+
+
+</script>
+</body>
+</html>
